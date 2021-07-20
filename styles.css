@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Future Condenced Normal;
+    src: url(fonts/Futura_Condenced-Normal.ttf);
+}
+@font-face {
+    font-family: Future Condenced Plain;
+    src: url(fonts/FuturaCondensedPlain.ttf);
+}
+img {
+    height: 500px;
+    width: 900px;
+    margin-bottom: 30px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #153572;
+
+}
+audio {
+    display: none;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Future Condenced Plain';
+}
+
+.flex_sb {
+    display: flex;
+    flex-direction: row;
+    width:  1000px;
+    align-items: center;
+    justify-content: center;
+
+}
+.player_butt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.intro {
+    margin-bottom: 50px;
+}
+
+#positionBar {
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background: #027ff3;
+    text-align: center;
+    transition: ease 0.8s;
+    font-family: 'Future Condenced Normal';
+ }
+ 
+ #positionBar span {
+    display: inline-block;
+    margin-top: 5px;
+    transition: ease 0.8s;
+ }
+ 
+ #durationBar {
+    border: solid 1px black;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: ease 0.8s;
+ }
+ 
+ button {
+        height: 60px;
+        width: 120px;
+        background-color: #0469dd;
+        color: white;
+        font-family: 'Future Condenced Normal';
+    }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="media/jeopardy02.png" type="image/png">
+    <title>Своя Игра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="https://s1.studylib.ru/store/data/006249683_1-9a976f86affb2f2655e14d8a9c4fed70.png">
+    <div class="music">
+        <div class="intro">
+            <audio id="audioplayer" src="0" controls="controls" onTimeUpdate="progressUpdate()"></audio>
+            <h1 id="h_track">Плеер</h1>
+            <div>
+                    <div class="barContainer">
+                        <div id="durationBar">
+                            <div id="positionBar"><span id="displayStatus">0</span>
+                            </div>
+                        </div>
+                    </div>  
+                <div class="player_butt">
+                    <button onclick="play()">Play</button>
+                    <button onclick="pause()">Pause</button>
+                    <button onclick="stop()">Stop</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex_sb">
+            <button id="intro">Вступление</button>
+            <button id="closing">Закрытие</button>
+            <button id="cat">Кот в мешке</button>
+            <button id="category">Категории</button>
+            <button id="choice">Выбор</button>
+            <button id="auction">Аукцион</button>
+            <button id="noanswer">Нет ответа</button>
+            <button id="round">Раунд начало</button>
+            <button id="roundend">Раунд закончен</button>
+            <button id="think">Размышление</button>
+            <button id="fanfare">Фанфары</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
